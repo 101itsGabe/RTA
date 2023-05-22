@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RTA.XamlPages.RandomizerPage"
+             Title="RandomizerPage">
+    <VerticalStackLayout>
+        <Label
+            Text="{Binding taskDescription, Mode=TwoWay}"
+            Margin="50"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            TextColor="DarkSlateGray"
+            />
+        <Button
+            Text="Click me for a random task"
+            Clicked="RandomClick"
+            />
+    </VerticalStackLayout>
+</ContentPage>

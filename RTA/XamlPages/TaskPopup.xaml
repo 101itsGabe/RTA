@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             x:Class="RTA.XamlPages.TaskPopup"
+             CanBeDismissedByTappingOutsideOfPopup="False"
+           Size="250,300"
+             >
+    <VerticalStackLayout Background="#272727">
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="FloralWhite"/>
+        <Entry
+            Placeholder="This is the task"
+            HeightRequest="75"
+            TextColor="White"
+            TextChanged="OnTextChanged"
+            />
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button
+            Grid.Column="0"
+            Text="Add Task"
+            Clicked="AddTask_Button"
+            BackgroundColor="DarkSlateGray"/>
+            <Button
+            Grid.Column="1"
+            Text="Cancel"
+            Clicked="Button_Close"
+            BackgroundColor="DarkSlateGray"/>
+        </Grid>
+    </VerticalStackLayout>
+</mct:Popup>

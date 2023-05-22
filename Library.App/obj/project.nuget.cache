@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EXMHhO83WXMO7ugBHWWj3VgM23HLD+OyBBHjhokV+pzj4rDdNIo3r4rU2tY2cH0NIX3lQT1XbyIipxXANfBwFw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\manng\\Desktop\\RTAPt2\\Library.App\\Library.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\manng\\.nuget\\packages\\communitytoolkit.maui\\5.1.0\\communitytoolkit.maui.5.1.0.nupkg.sha512",
+    "C:\\Users\\manng\\.nuget\\packages\\communitytoolkit.maui.core\\5.1.0\\communitytoolkit.maui.core.5.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
