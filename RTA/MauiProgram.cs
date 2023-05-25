@@ -1,5 +1,9 @@
 ﻿using CommunityToolkit.Maui;
+using Library.App.Models;
 using Microsoft.Extensions.Logging;
+using Library.App.Services;
+using RTA.XamlPages;
+using RTA.ViewModels;
 
 namespace RTA;
 
@@ -17,8 +21,19 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
+        //Services
+        builder.Services.AddSingleton<ITaskItemService, TaskService>();
+
+        //View Registration
+        builder.Services.AddSingleton<TaskPage>();
+        builder.Services.AddTransient<TaskPopup>();
+
+        //ViewModels
+        builder.Services.AddSingleton<TaskViewModel>();
+        builder.Services.AddTransient<TaskPopupViewModel>();
+
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

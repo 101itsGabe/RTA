@@ -4,38 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Library.App.Models;
+using System.Text.Json;
+using System.IO;
+using SQLite;
 
 namespace Library.App.Services
 {
-    public class TaskService
+    public class TaskService : ITaskItemService
     {
-        
-    
-        public List<TaskItem> Tasks;
-        private static TaskService _instance;
+
+        private SQLiteAsyncConnection _dbConn;
         public TaskService()
         {
-            Tasks = new List<TaskItem>();
-            for (int i = 0; i <= 5; i++)
-            {
-                TaskItem t = new TaskItem();
-                t.taskName += (i + 1).ToString();
-                t.taskDesc += (i + 1).ToString();
-                Tasks.Add(t);
-            }
+            SetUpDb();
         }
 
-        public static TaskService Current
+        private async void SetUpDb()
         {
-            get
+            if (_dbConn == null)
             {
-                if (_instance == null)
-                {
-                    _instance = new TaskService();
-                }
-                return _instance;
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TaskItem.db3");
+                _dbConn = new SQLiteAsyncConnection(dbPath);
+                await _dbConn.CreateTableAsync<TaskItem>();
             }
         }
+        public Task<int> AddTask(TaskItem taskitem)
+        {
+            return _dbConn.InsertAsync(taskitem);
+        }
+
+        public Task<int> DeleteTask(TaskItem taskitem)
+        {
+            return _dbConn.DeleteAsync(taskitem);
+        }
+
+        public Task<List<TaskItem>> GetTaskList()
+        {
+            var taskList = _dbConn.Table<TaskItem>().ToListAsync();
+            return taskList;
+        }
+
+        public Task<int> UpdateTask(TaskItem taskitem)
+        {
+            return _dbConn.UpdateAsync(taskitem);
+        }
+
+        
     }
 }
 

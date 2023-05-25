@@ -1,18 +1,24 @@
 ﻿using Library.App.Services;
 using Library.App.Models;
-
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using RTA.XamlPages;
 
 namespace RTA.ViewModels
 {
-    public class MainPageViewModel
+    public partial class MainPageViewModel : ObservableObject
     {
-        public TaskItem MyTask { get; set; }
-        public string taskDescription
-        { get { return MyTask.taskDesc; } }
-
-        public MainPageViewModel(TaskItem t)
+     
+        public MainPageViewModel()
         {
-            MyTask = t;
+
+            
+        }
+
+        [RelayCommand]
+        public async void GoToTaskPage()
+        {
+            await Shell.Current.GoToAsync(nameof(TaskPage));
         }
     }
 }

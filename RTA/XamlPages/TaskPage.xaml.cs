@@ -3,20 +3,25 @@ namespace RTA.XamlPages;
 using Library.App.Models;
 using RTA.ViewModels;
 using CommunityToolkit.Maui.Views;
+using System.Collections.ObjectModel;
+using Library.App.Services;
 
 public partial class TaskPage : ContentPage
 {
-	public TaskItem t;
-	public TaskPage()
+	public TaskViewModel _vm;
+	public TaskPage(TaskViewModel vm)
 	{
 		InitializeComponent();
-		BindingContext = new TaskViewModel();
+		_vm = vm;
+		this.BindingContext = vm;
 	}
 
-    private async void AddTask(object sender, EventArgs e)
+    protected override void OnAppearing()
     {
-        await this.ShowPopupAsync(new TaskPopup());
-        (BindingContext as TaskViewModel).UpdateList();
-    }
+        base.OnAppearing();
+		_vm.GetTaskListCommand.Execute(null);
+	}
+
+
 
 }

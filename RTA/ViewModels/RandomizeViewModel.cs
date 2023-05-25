@@ -12,20 +12,19 @@ namespace RTA.ViewModels
 {
     public class RandomizeViewModel : INotifyPropertyChanged
     {
+        
         public TaskService ts;
         public TaskItem curTask { get; set; }
         public string tsd;
         private static System.Timers.Timer aTimer;
         public string taskDescription
         {
-            get { return curTask.taskDesc; }
+            get { return curTask.TaskDesc; }
 
         }
 
         public RandomizeViewModel()
         {
-            ts = TaskService.Current;
-            curTask = ts.Tasks[0];
         }
         public async void RandomizeTask()
         {
@@ -43,8 +42,6 @@ namespace RTA.ViewModels
         public void setTask()
         {
             Random rand = new Random();
-            int t = rand.Next(0, ts.Tasks.Count);
-            curTask = ts.Tasks[t];
             OnPropertyChanged(nameof(taskDescription));
         }
         public event PropertyChangedEventHandler PropertyChanged;
@@ -68,5 +65,6 @@ namespace RTA.ViewModels
         {
 
         }
+        
     }
 }

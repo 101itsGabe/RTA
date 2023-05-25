@@ -4,6 +4,44 @@
         <name>RTA</name>
     </assembly>
     <members>
+        <member name="T:RTA.ViewModels.MainPageViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:RTA.ViewModels.MainPageViewModel.goToTaskPageCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.MainPageViewModel.GoToTaskPageCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.MainPageViewModel.GoToTaskPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.MainPageViewModel.GoToTaskPage"/>.</summary>
+        </member>
+        <member name="T:RTA.ViewModels.TaskPopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RTA.ViewModels.TaskPopupViewModel.TaskDesc">
+            <inheritdoc cref="F:RTA.ViewModels.TaskPopupViewModel._taskDesc"/>
+        </member>
+        <member name="F:RTA.ViewModels.TaskPopupViewModel.addUpdateTaskCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.TaskPopupViewModel.AddUpdateTaskCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.TaskPopupViewModel.AddUpdateTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.TaskPopupViewModel.AddUpdateTask"/>.</summary>
+        </member>
+        <member name="T:RTA.ViewModels.TaskViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:RTA.ViewModels.TaskViewModel.getTaskListCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.TaskViewModel.GetTaskListCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.TaskViewModel.GetTaskListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.TaskViewModel.GetTaskList"/>.</summary>
+        </member>
+        <member name="F:RTA.ViewModels.TaskViewModel.showPopupCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.TaskViewModel.ShowPopupCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.TaskViewModel.ShowPopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.TaskViewModel.ShowPopup"/>.</summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
@@ -102,6 +140,24 @@
             <param name = "length">The duration, in milliseconds, of the animation</param>
             <param name = "easing">The easing function to be used in the animation</param>
             <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TaskDesc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TaskDesc" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TaskDesc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TaskDesc" generated properties.</summary>
         </member>
     </members>
 </doc>

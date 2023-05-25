@@ -6,47 +6,42 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.KotlinX.Coroutines.Scheduling;
 using Library.App.Models;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.ComponentModel;
+using RTA.XamlPages;
 
 namespace RTA.ViewModels
 {
-    public class TaskViewModel
+    public partial class TaskViewModel : ObservableObject
     {
-        public TaskService taskService { get; set; }
-        public TaskItem curTask { get; set; }
-        public int TasksperHeight { get; set; }
-        public List<TaskItem> tasksList;
-        public ObservableCollection<TaskItem> tasks;
+        public ObservableCollection<TaskItem> Tasks { get; set; } = new ObservableCollection<TaskItem>();
+        ITaskItemService _taskitemService;
 
-        public TaskViewModel()
+        public TaskViewModel(ITaskItemService taskService)
         {
-            taskService = TaskService.Current;
-            tasks = new ObservableCollection<TaskItem>(taskService.Tasks);
+            _taskitemService = taskService;
         }
 
-        public ObservableCollection<TaskItem> ListOfTasks
+        [RelayCommand]
+        public async void GetTaskList()
         {
-            get
+            var taskList = await _taskitemService.GetTaskList();
+            if (taskList?.Count > 0)
             {
-                return tasks;
+                Tasks.Clear();
+                foreach (var task in taskList)
+                {
+                    Tasks.Add(task);
+                }
             }
-
         }
 
-        public void UpdateList()
+        [RelayCommand]
+        public async void ShowPopup()
         {
-            for (int i = tasks.Count - 1; i < taskService.Tasks.Count; i++)
-            {
-                tasks.Add(taskService.Tasks[i]);
-            }
-            OnPropertyChanged(nameof(ListOfTasks));
+           await Shell.Current.GoToAsync(nameof(TaskPopup));
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }

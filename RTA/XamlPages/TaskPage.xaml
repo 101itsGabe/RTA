@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Models="clr-namespace:Library.App.Models;assembly=Library.App"
+             xmlns:ViewModels="clr-namespace:RTA.ViewModels"
              x:Class="RTA.XamlPages.TaskPage"
              Title="TaskPage">
-    <Grid>
+    <Grid Margin="10" RowSpacing="10">
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="14*"/>
+            <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label 
-            Text="Welcome to Swiffer!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Grid.Row="0"/>
-        <ListView 
-                Grid.Row="1"
-                ItemsSource="{Binding ListOfTasks, Mode=TwoWay}"
-                RowHeight="65"
-                VerticalScrollBarVisibility="Always"
-                VerticalOptions="FillAndExpand"
-            />
-        <Button
-            Text="Add a Task"
-            Clicked="AddTask"
-            Grid.Row="2"
-            BackgroundColor="DarkSlateGray"
-            />
+        <HorizontalStackLayout Grid.Row="0" Spacing="50">
+            <Label Text="ToDo List" FontSize="28" />
+            <Button BackgroundColor="DarkSlateGray" Margin="80,0,0,0" Text="Add ToDo" HorizontalOptions="EndAndExpand" Command="{Binding ShowPopupCommand}"/>
+        </HorizontalStackLayout>
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Tasks}" HeightRequest="750">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="Models:TaskItem">
+                    <Frame Margin="10" Padding="10">
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="{Binding Id}" FontSize="18"/>
+                            <Label Text="{Binding TaskDesc}" FontSize="18"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
     </Grid>
 </ContentPage>
