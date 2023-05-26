@@ -31,6 +31,7 @@ namespace RTA.ViewModels
             _taskitemService = taskService;
         }
 
+        /*
         [RelayCommand]
         public async void GetTaskList()
         {
@@ -44,6 +45,7 @@ namespace RTA.ViewModels
                 }
             }
         }
+        */
         [RelayCommand]
         public async void RandomizeTask()
         {
@@ -63,13 +65,15 @@ namespace RTA.ViewModels
         {
             Random random = new Random();
             var taskList = await _taskitemService.GetTaskList();
-            int t = random.Next(0, taskList.Count + 1);
-            var curTask = await _taskitemService.GetTaskById(t);
+            int t = random.Next(0, taskList.Count);
+            
+            var curTask = taskList[t];
             if (curTask != null)
             {
-                TaskDesc = curTask.TaskDesc;
-                OnTaskDescChanged(nameof(TaskDesc));
+                    TaskDesc = curTask.TaskDesc;
+                    OnTaskDescChanged(nameof(TaskDesc));
             }
+            
         }
 
 
@@ -93,6 +97,7 @@ namespace RTA.ViewModels
         {
             
         }
+       
 
     }
 }

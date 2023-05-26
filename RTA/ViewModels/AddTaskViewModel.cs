@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RTA.XamlPages;
 
 namespace RTA.ViewModels
 {
@@ -34,6 +35,8 @@ namespace RTA.ViewModels
                 await Shell.Current.DisplayAlert("TaskItem Added!", "Task Added To List!", "OK");
             else
                 await Shell.Current.DisplayAlert("Task Not Added!", "Task Not Added To List!", "OK");
+            
+            
         }
     }
 }

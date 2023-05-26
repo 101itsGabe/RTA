@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RTA.XamlPages.AddTaskPage"
-             Title="AddTaskPage">
+             Title="AddTaskPage"
+             BackgroundColor="#272537">
     <VerticalStackLayout Margin="10" Spacing="15">
-        <Label Text="Desciption" FontSize="16"/>
-        <Entry Text="{Binding TaskDesc}" Placeholder="Task description"/>
-        <BoxView HeightRequest="0.8" Color="DarkSlateGrey"/>
+        <Label Text="Desciption" Margin="5" FontSize="36" FontAttributes="Bold" TextColor="#FFF8E9"/>
+        <Entry Text="{Binding TaskDesc}" TextColor="#FFF8E9" Placeholder="Task description" FontAttributes="Bold" FontSize="15"/>
+        <BoxView HeightRequest="0.8" Color="FloralWhite"/>
 
-        <Button Text="Save" Command="{Binding AddUpdateTaskCommand}"/>
+        <Button Text="Save" FontAttributes="Bold" TextColor="#272537" BackgroundColor="#FFF8E9" Command="{Binding AddUpdateTaskCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

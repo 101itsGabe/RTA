@@ -990,3 +990,6 @@ C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-android\android\assets\System
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-android\resizetizer\r\drawable\dices.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-android\resizetizer\r\drawable\random.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-android\resizetizer\r\drawable\list.png

@@ -43,5 +43,12 @@ namespace RTA.ViewModels
             await AppShell.Current.GoToAsync(nameof(AddTaskPage));
         }
 
+        public async void SwipeDeleteItem(TaskItem taskItem)
+        {
+            var response = await _taskitemService.DeleteTask(taskItem);
+            GetTaskList();
+        }
     }
+
 }
+

@@ -2,18 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RTA.XamlPages.RandomizerPage"
-             Title="RandomizerPage">
-    <VerticalStackLayout>
+             Title="RandomizerPage"
+             BackgroundColor="#272537">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <Label
+            Grid.Row="0"
             Text="{Binding TaskDesc}"
-            Margin="50"
+            HorizontalTextAlignment="Center"
+            FontSize="40"
+            TextColor="FloralWhite"
             VerticalOptions="Center"
-            HorizontalOptions="Center"
-            TextColor="DarkSlateGray"
+            FontAttributes="Bold"
             />
-        <Button
-            Text="Click me for a random task"
+        <ImageButton
+            Grid.Row="1"
+            Source="random.png"
             Command="{Binding RandomizeTaskCommand}"
-            />
-    </VerticalStackLayout>
+            BackgroundColor="#FFE8B6"
+            HeightRequest="170"
+            Padding="20"
+            Aspect="AspectFit"
+            CornerRadius="15"
+            Margin="10"
+            >
+            
+            
+        </ImageButton>
+
+    </Grid>
 </ContentPage>

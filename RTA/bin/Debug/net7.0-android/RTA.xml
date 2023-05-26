@@ -36,7 +36,6 @@
         <member name="T:RTA.ViewModels.RandomizeViewModel">
             <inheritdoc/>
             <inheritdoc/>
-            <inheritdoc/>
         </member>
         <member name="P:RTA.ViewModels.RandomizeViewModel.TaskDesc">
             <inheritdoc cref="F:RTA.ViewModels.RandomizeViewModel._taskDesc"/>
@@ -46,12 +45,6 @@
             <param name="oldValue">The previous property value that was replaced.</param>
             <param name="newValue">The new property value that was set.</param>
             <remarks>This method is invoked right after the value of <see cref="P:RTA.ViewModels.RandomizeViewModel.TaskDesc"/> is changed.</remarks>
-        </member>
-        <member name="F:RTA.ViewModels.RandomizeViewModel.getTaskListCommand">
-            <summary>The backing field for <see cref="P:RTA.ViewModels.RandomizeViewModel.GetTaskListCommand"/>.</summary>
-        </member>
-        <member name="P:RTA.ViewModels.RandomizeViewModel.GetTaskListCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.RandomizeViewModel.GetTaskList"/>.</summary>
         </member>
         <member name="F:RTA.ViewModels.RandomizeViewModel.randomizeTaskCommand">
             <summary>The backing field for <see cref="P:RTA.ViewModels.RandomizeViewModel.RandomizeTaskCommand"/>.</summary>

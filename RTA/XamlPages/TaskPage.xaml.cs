@@ -22,6 +22,9 @@ public partial class TaskPage : ContentPage
 		_vm.GetTaskListCommand.Execute(null);
 	}
 
-
-
+    private void SwipeItem_Invoked(object sender, EventArgs e)
+    {
+		TaskItem task = (TaskItem)(sender as SwipeItem).BindingContext;
+		_vm.SwipeDeleteItem(task);
+    }
 }

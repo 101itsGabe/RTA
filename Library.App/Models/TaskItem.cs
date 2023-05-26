@@ -13,5 +13,7 @@ namespace Library.App.Models
 
         public string TaskDesc { get; set; }
 
+        public string TaskGroup { get; set; }
+
     }
 }
