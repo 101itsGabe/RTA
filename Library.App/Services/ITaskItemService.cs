@@ -14,5 +14,7 @@ namespace Library.App.Services
         Task<int> AddTask(TaskItem taskitem);
         Task<int> DeleteTask(TaskItem taskitem);
         Task<int> UpdateTask(TaskItem taskitem);
+
+        Task<TaskItem> GetTaskById(int taskId);
     }
 }

@@ -38,9 +38,9 @@ namespace RTA.ViewModels
         }
 
         [RelayCommand]
-        public async void ShowPopup()
+        public async void ShowAddTask()
         {
-           await Shell.Current.GoToAsync(nameof(TaskPopup));
+            await AppShell.Current.GoToAsync(nameof(AddTaskPage));
         }
 
     }

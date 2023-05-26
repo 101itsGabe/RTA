@@ -7,48 +7,71 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using Library.App.Models;
+using CommunityToolkit.Mvvm.Input;
+using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace RTA.ViewModels
 {
-    public class RandomizeViewModel : INotifyPropertyChanged
+    public partial class RandomizeViewModel : ObservableObject
     {
         
-        public TaskService ts;
-        public TaskItem curTask { get; set; }
-        public string tsd;
         private static System.Timers.Timer aTimer;
-        public string taskDescription
-        {
-            get { return curTask.TaskDesc; }
 
+        public ObservableCollection<TaskItem> Tasks { get; set; } = new ObservableCollection<TaskItem>();
+        ITaskItemService _taskitemService;
+
+        [ObservableProperty]
+        private string _taskDesc;
+
+
+
+        public RandomizeViewModel(ITaskItemService taskService)
+        {
+            _taskitemService = taskService;
         }
 
-        public RandomizeViewModel()
+        [RelayCommand]
+        public async void GetTaskList()
         {
+            var taskList = await _taskitemService.GetTaskList();
+            if (taskList?.Count > 0)
+            {
+                Tasks.Clear();
+                foreach (var task in taskList)
+                {
+                    Tasks.Add(task);
+                }
+            }
         }
+        [RelayCommand]
         public async void RandomizeTask()
         {
+            SetTimer();
             Random rand = new Random();
-            int t = rand.Next(8, 15);
+            int t = rand.Next(8,15);
             int countNum = 0;
             var periodicTimer = new PeriodicTimer(TimeSpan.FromSeconds(0.3));
             while (await periodicTimer.WaitForNextTickAsync())
             {
                 countNum++;
-                setTask();
+                UpdateTaskString();
                 if (countNum == t) { periodicTimer.Dispose(); }
             }
         }
-        public void setTask()
+        public async void UpdateTaskString()
         {
-            Random rand = new Random();
-            OnPropertyChanged(nameof(taskDescription));
+            Random random = new Random();
+            var taskList = await _taskitemService.GetTaskList();
+            int t = random.Next(0, taskList.Count + 1);
+            var curTask = await _taskitemService.GetTaskById(t);
+            if (curTask != null)
+            {
+                TaskDesc = curTask.TaskDesc;
+                OnTaskDescChanged(nameof(TaskDesc));
+            }
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+
 
         public void SetTimer()
         {
@@ -65,6 +88,11 @@ namespace RTA.ViewModels
         {
 
         }
-        
+
+        partial void OnTaskDescChanged(string oldValue, string newValue)
+        {
+            
+        }
+
     }
 }

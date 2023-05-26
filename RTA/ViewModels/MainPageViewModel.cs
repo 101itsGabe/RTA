@@ -18,7 +18,13 @@ namespace RTA.ViewModels
         [RelayCommand]
         public async void GoToTaskPage()
         {
-            await Shell.Current.GoToAsync(nameof(TaskPage));
+            await AppShell.Current.GoToAsync(nameof(TaskPage));
+        }
+        
+        [RelayCommand]
+        public async void GoToRandomizerPage()
+        {
+            await AppShell.Current.GoToAsync(nameof(RandomizerPage));
         }
     }
 }

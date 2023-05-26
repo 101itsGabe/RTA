@@ -26,11 +26,13 @@ public static class MauiProgram
 
         //View Registration
         builder.Services.AddSingleton<TaskPage>();
-        builder.Services.AddTransient<TaskPopup>();
+        builder.Services.AddTransient<AddTaskPage>();
+        builder.Services.AddTransient<RandomizerPage>();
 
         //ViewModels
         builder.Services.AddSingleton<TaskViewModel>();
-        builder.Services.AddTransient<TaskPopupViewModel>();
+        builder.Services.AddTransient<AddTaskViewModel>();
+        builder.Services.AddTransient<RandomizeViewModel>();
 
 #if DEBUG
         builder.Logging.AddDebug();

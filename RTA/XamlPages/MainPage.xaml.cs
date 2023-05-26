@@ -1,7 +1,7 @@
 ﻿using Library.App.Models;
 using RTA.ViewModels;
 using RTA.XamlPages;
-namespace RTA;
+namespace RTA.XamlPages;
 
 public partial class MainPage : ContentPage
 {
@@ -12,10 +12,5 @@ public partial class MainPage : ContentPage
         BindingContext = new MainPageViewModel();
     }
 
-
-    private async void RandomizerBtn_Clicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new RandomizerPage());
-    }
 }
 

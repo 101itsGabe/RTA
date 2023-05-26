@@ -4,7 +4,21 @@
         <name>RTA</name>
     </assembly>
     <members>
+        <member name="T:RTA.ViewModels.AddTaskViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RTA.ViewModels.AddTaskViewModel.TaskDesc">
+            <inheritdoc cref="F:RTA.ViewModels.AddTaskViewModel._taskDesc"/>
+        </member>
+        <member name="F:RTA.ViewModels.AddTaskViewModel.addUpdateTaskCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.AddTaskViewModel.AddUpdateTaskCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.AddTaskViewModel.AddUpdateTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.AddTaskViewModel.AddUpdateTask"/>.</summary>
+        </member>
         <member name="T:RTA.ViewModels.MainPageViewModel">
+            <inheritdoc/>
             <inheritdoc/>
         </member>
         <member name="F:RTA.ViewModels.MainPageViewModel.goToTaskPageCommand">
@@ -13,18 +27,37 @@
         <member name="P:RTA.ViewModels.MainPageViewModel.GoToTaskPageCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.MainPageViewModel.GoToTaskPage"/>.</summary>
         </member>
-        <member name="T:RTA.ViewModels.TaskPopupViewModel">
+        <member name="F:RTA.ViewModels.MainPageViewModel.goToRandomizerPageCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.MainPageViewModel.GoToRandomizerPageCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.MainPageViewModel.GoToRandomizerPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.MainPageViewModel.GoToRandomizerPage"/>.</summary>
+        </member>
+        <member name="T:RTA.ViewModels.RandomizeViewModel">
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
-        <member name="P:RTA.ViewModels.TaskPopupViewModel.TaskDesc">
-            <inheritdoc cref="F:RTA.ViewModels.TaskPopupViewModel._taskDesc"/>
+        <member name="P:RTA.ViewModels.RandomizeViewModel.TaskDesc">
+            <inheritdoc cref="F:RTA.ViewModels.RandomizeViewModel._taskDesc"/>
         </member>
-        <member name="F:RTA.ViewModels.TaskPopupViewModel.addUpdateTaskCommand">
-            <summary>The backing field for <see cref="P:RTA.ViewModels.TaskPopupViewModel.AddUpdateTaskCommand"/>.</summary>
+        <member name="M:RTA.ViewModels.RandomizeViewModel.OnTaskDescChanged(System.String,System.String)">
+            <summary>Executes the logic for when <see cref="P:RTA.ViewModels.RandomizeViewModel.TaskDesc"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:RTA.ViewModels.RandomizeViewModel.TaskDesc"/> is changed.</remarks>
         </member>
-        <member name="P:RTA.ViewModels.TaskPopupViewModel.AddUpdateTaskCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.TaskPopupViewModel.AddUpdateTask"/>.</summary>
+        <member name="F:RTA.ViewModels.RandomizeViewModel.getTaskListCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.RandomizeViewModel.GetTaskListCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.RandomizeViewModel.GetTaskListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.RandomizeViewModel.GetTaskList"/>.</summary>
+        </member>
+        <member name="F:RTA.ViewModels.RandomizeViewModel.randomizeTaskCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.RandomizeViewModel.RandomizeTaskCommand"/>.</summary>
+        </member>
+        <member name="P:RTA.ViewModels.RandomizeViewModel.RandomizeTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.RandomizeViewModel.RandomizeTask"/>.</summary>
         </member>
         <member name="T:RTA.ViewModels.TaskViewModel">
             <inheritdoc/>
@@ -36,11 +69,11 @@
         <member name="P:RTA.ViewModels.TaskViewModel.GetTaskListCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.TaskViewModel.GetTaskList"/>.</summary>
         </member>
-        <member name="F:RTA.ViewModels.TaskViewModel.showPopupCommand">
-            <summary>The backing field for <see cref="P:RTA.ViewModels.TaskViewModel.ShowPopupCommand"/>.</summary>
+        <member name="F:RTA.ViewModels.TaskViewModel.showAddTaskCommand">
+            <summary>The backing field for <see cref="P:RTA.ViewModels.TaskViewModel.ShowAddTaskCommand"/>.</summary>
         </member>
-        <member name="P:RTA.ViewModels.TaskViewModel.ShowPopupCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.TaskViewModel.ShowPopup"/>.</summary>
+        <member name="P:RTA.ViewModels.TaskViewModel.ShowAddTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RTA.ViewModels.TaskViewModel.ShowAddTask"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>

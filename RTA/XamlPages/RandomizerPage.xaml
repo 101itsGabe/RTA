@@ -5,7 +5,7 @@
              Title="RandomizerPage">
     <VerticalStackLayout>
         <Label
-            Text="{Binding taskDescription, Mode=TwoWay}"
+            Text="{Binding TaskDesc}"
             Margin="50"
             VerticalOptions="Center"
             HorizontalOptions="Center"
@@ -13,7 +13,7 @@
             />
         <Button
             Text="Click me for a random task"
-            Clicked="RandomClick"
+            Command="{Binding RandomizeTaskCommand}"
             />
     </VerticalStackLayout>
 </ContentPage>

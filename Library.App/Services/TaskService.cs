@@ -49,7 +49,13 @@ namespace Library.App.Services
             return _dbConn.UpdateAsync(taskitem);
         }
 
-        
+        public Task<TaskItem> GetTaskById(int taskId)
+        {
+            var curTask = _dbConn.Table<TaskItem>().FirstOrDefaultAsync(t => t.Id == taskId);
+            return curTask;
+        }
+
+
     }
 }
 

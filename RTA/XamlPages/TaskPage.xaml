@@ -8,15 +8,15 @@
     <Grid Margin="10" RowSpacing="10">
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         <HorizontalStackLayout Grid.Row="0" Spacing="50">
-            <Label Text="ToDo List" FontSize="28" />
-            <Button BackgroundColor="DarkSlateGray" Margin="80,0,0,0" Text="Add ToDo" HorizontalOptions="EndAndExpand" Command="{Binding ShowPopupCommand}"/>
+            <Label Text="Task List" FontSize="28" Margin="10"/>
+            <Button BackgroundColor="DarkSlateGray" WidthRequest="125" Margin="40,0,0,0" Text="Add Task" HorizontalOptions="EndAndExpand" Command="{Binding ShowAddTaskCommand}"/>
         </HorizontalStackLayout>
 
-        <CollectionView Grid.Row="1" ItemsSource="{Binding Tasks}" HeightRequest="750">
+        
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Tasks}" >
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="Models:TaskItem">
                     <Frame Margin="10" Padding="10">
@@ -25,7 +25,6 @@
                             <Label Text="{Binding TaskDesc}" FontSize="18"/>
                         </HorizontalStackLayout>
                     </Frame>
-
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

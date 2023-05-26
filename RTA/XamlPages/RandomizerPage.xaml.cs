@@ -3,15 +3,12 @@ using RTA.ViewModels;
 
 public partial class RandomizerPage : ContentPage
 {
-    public RandomizerPage()
+    public RandomizerPage(RandomizeViewModel vm)
     {
         InitializeComponent();
-        BindingContext = new RandomizeViewModel();
+        this.BindingContext = vm;
     }
 
 
-    public void RandomClick(object sender, EventArgs e)
-    {
-        (BindingContext as RandomizeViewModel).RandomizeTask();
-    }
+
 }
