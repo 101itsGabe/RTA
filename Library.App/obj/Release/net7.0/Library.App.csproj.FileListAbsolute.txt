@@ -1,0 +1,12 @@
+C:\Users\manng\Desktop\RTAPt2\Library.App\bin\Release\net7.0\Library.App.deps.json
+C:\Users\manng\Desktop\RTAPt2\Library.App\bin\Release\net7.0\Library.App.dll
+C:\Users\manng\Desktop\RTAPt2\Library.App\bin\Release\net7.0\Library.App.pdb
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\Library.App.csproj.AssemblyReference.cache
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\Library.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\Library.App.AssemblyInfoInputs.cache
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\Library.App.AssemblyInfo.cs
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\Library.App.csproj.CoreCompileInputs.cache
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\Library.App.dll
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\refint\Library.App.dll
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\Library.App.pdb
+C:\Users\manng\Desktop\RTAPt2\Library.App\obj\Release\net7.0\ref\Library.App.dll

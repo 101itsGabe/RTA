@@ -43,7 +43,7 @@
                         Aspect="AspectFit"
                         CornerRadius="10"
                         Command="{Binding GoToTaskPageCommand}"
-                        HeightRequest="320"
+                        HeightRequest="350"
                              Margin="10"
                              />
 

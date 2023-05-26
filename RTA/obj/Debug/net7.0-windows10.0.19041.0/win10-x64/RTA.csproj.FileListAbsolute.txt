@@ -302,11 +302,14 @@ C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dices.scale-100.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\list.scale-100.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\random.scale-100.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\RTA.AssemblyInfoInputs.cache
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\RTA.AssemblyInfo.cs

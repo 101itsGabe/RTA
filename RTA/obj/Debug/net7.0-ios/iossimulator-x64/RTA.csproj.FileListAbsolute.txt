@@ -210,13 +210,10 @@ C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libicui1
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libicuuc.a
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-debugger-static.a
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-debugger-stub-static.a
-C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-debugger.dylib
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing-static.a
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing-stub-static.a
-C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-diagnostics_tracing.dylib
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload-static.a
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload-stub-static.a
-C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload.dylib
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmonosgen-2.0.a
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libmonosgen-2.0.dylib
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.iOS.registrar.a
@@ -227,6 +224,7 @@ C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libxamar
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\Library.App.dll
 C:\Users\manng\Desktop\RTAPt2\RTA\bin\Debug\net7.0-ios\iossimulator-x64\Library.App.pdb
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\mauifont.inputs
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\mauisplash.inputs
@@ -247,6 +245,9 @@ C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizeti
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\dices.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\list.png
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\random.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash@2x.png
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\splash@3x.png
