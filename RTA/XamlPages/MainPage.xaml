@@ -25,31 +25,33 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-
                 <ImageButton Grid.Column="0"
+                            
                              BackgroundColor="#FFE8B6"
-                             Source="dices.png"
-                             Padding="15"
-                             Aspect="AspectFit"
                              Command="{Binding GoToRandomizerPageCommand}"
-                             CornerRadius="10"
                              HeightRequest="350"
-                    />
-
+                             CornerRadius="10"
+                             Source="dice.png"
+                             Padding="0.005"
+                             Margin="5"
+                             >
+                    
+                </ImageButton>
                 <ImageButton Grid.Column="1"
                         BackgroundColor="#FFE8B6"
-                        Source="list.png"
-                        Padding="15"
-                        Aspect="AspectFit"
-                        CornerRadius="10"
                         Command="{Binding GoToTaskPageCommand}"
-                        HeightRequest="350"
-                             Margin="10"
-                             />
+                             CornerRadius="10"
+                              HeightRequest="350"
+                             Source="list.png"
+                             Padding="1"
+                             Margin="0"
+                             >
 
+                </ImageButton>
 
             </Grid>
 
+            
 
         </VerticalStackLayout>
     </ScrollView>

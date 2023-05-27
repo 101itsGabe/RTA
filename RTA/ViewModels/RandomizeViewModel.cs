@@ -29,23 +29,10 @@ namespace RTA.ViewModels
         public RandomizeViewModel(ITaskItemService taskService)
         {
             _taskitemService = taskService;
+            _taskDesc = "Click Me!";
         }
 
-        /*
-        [RelayCommand]
-        public async void GetTaskList()
-        {
-            var taskList = await _taskitemService.GetTaskList();
-            if (taskList?.Count > 0)
-            {
-                Tasks.Clear();
-                foreach (var task in taskList)
-                {
-                    Tasks.Add(task);
-                }
-            }
-        }
-        */
+        
         [RelayCommand]
         public async void RandomizeTask()
         {

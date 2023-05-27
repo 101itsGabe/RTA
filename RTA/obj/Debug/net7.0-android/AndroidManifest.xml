@@ -5,11 +5,10 @@
     Changes to this file may cause incorrect behavior and will be lost if
     the contents are regenerated.
     -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.companyname.rta" android:versionName="1.0">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="21" package="com.companyname.rta" android:versionName="1.0">
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true" android:name="crc644dc017a5f3a10961.MainApplication" android:label="Ranask" android:debuggable="true" android:extractNativeLibs="true">
+  <application android:allowBackup="true" android:supportsRtl="true" android:name="crc644dc017a5f3a10961.MainApplication" android:label="Ranask" android:debuggable="true" android:extractNativeLibs="true">
     <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/Maui.SplashTheme" android:name="crc644dc017a5f3a10961.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -27,4 +26,6 @@
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.rta.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="33" />
 </manifest>

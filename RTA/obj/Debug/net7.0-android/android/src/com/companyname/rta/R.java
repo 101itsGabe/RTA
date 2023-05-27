@@ -11554,6 +11554,10 @@ public final class R {
     public static final int appicon_background=0x7f0d0001;
     public static final int appicon_foreground=0x7f0d0002;
     public static final int appicon_round=0x7f0d0003;
+    public static final int iconapp=0x7f0d0004;
+    public static final int iconapp_background=0x7f0d0005;
+    public static final int iconapp_foreground=0x7f0d0006;
+    public static final int iconapp_round=0x7f0d0007;
   }
   public static final class plurals {
     public static final int mtrl_badge_content_description=0x7f0e0000;
@@ -12017,7 +12021,6 @@ public final class R {
     public static final int Maui_MainTheme=0x7f10012a;
     public static final int Maui_MainTheme_NoActionBar=0x7f10012b;
     /**
-     * Splash theme
      * Splash theme
      */
     public static final int Maui_SplashTheme=0x7f10012c;

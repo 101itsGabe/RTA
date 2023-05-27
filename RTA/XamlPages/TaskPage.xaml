@@ -23,7 +23,7 @@
                     <SwipeView>
                         <SwipeView.LeftItems>
                             <SwipeItems Mode="Execute">
-                                <SwipeItem Text="X" 
+                                <SwipeItem Text="X"
                                            BackgroundColor="Red"
                                            Invoked="SwipeItem_Invoked"
                                            >
@@ -33,7 +33,7 @@
                         <Frame Margin="10" Padding="10" BackgroundColor="#fff8e9">
                              <HorizontalStackLayout Spacing="10">
                                   <Label Text="" FontSize="18"/>
-                                  <Label Text="{Binding TaskDesc}" FontSize="18" FontAttributes="Bold"/>
+                                  <Label Text="{Binding TaskDesc}" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
                              </HorizontalStackLayout>
                         </Frame>
                     </SwipeView>
