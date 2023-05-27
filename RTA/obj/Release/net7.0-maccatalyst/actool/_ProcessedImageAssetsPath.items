@@ -13,5 +13,17 @@
     <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png" />
     <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png" />
     <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\Contents.json" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp20x20@2x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp20x20@3x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp29x29@2x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp29x29@3x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp40x40@2x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp40x40@3x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp60x60@2x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp60x60@3x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp76x76@2x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconapp83.5x83.5@2x.png" />
+    <ImageAsset Include="C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-maccatalyst\resizetizer\r\Assets.xcassets\iconapp.appiconset\iconappItunesArtwork.png" />
   </ItemGroup>
 </Project>

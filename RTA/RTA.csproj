@@ -32,7 +32,8 @@
 
 	<PropertyGroup Condition="'$(TargetFramework)'=='net7.0-ios'">
 	  <ProvisioningType>automatic</ProvisioningType>
-	  <CodesignKey>iPhone Developer</CodesignKey>
+	  <CodesignKey>Apple Development: Created via API (4RX22ZGXWC)</CodesignKey>
+	  <CodesignProvision>VS: com.RanaskiOSsample.gabriel Development</CodesignProvision>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -86,4 +87,9 @@
 		<AndroidSigningKeyAlias>GMAlias</AndroidSigningKeyAlias>
 		<AndroidSigningKeyPass>3872810Gabe$$</AndroidSigningKeyPass>
 	</PropertyGroup>
+
+	<PropertyGroup Condition="$(TargetFramework.Contains('-ios')) and '$(Configuration)' == 'Release'">
+		<RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+		<CodesignKey>Apple Development: manngabe@gmail.com (227D56VN27)</CodesignKey>
+</PropertyGroup>
 </Project>

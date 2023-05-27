@@ -20,5 +20,5 @@
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.rta.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
   <!--suppress UsesMinSdkAttributes-->
-  <uses-sdk android:minSdkVersion="21" />
+  <uses-sdk android:minSdkVersion="33" />
 </manifest>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mHz6hvRzTUgJwOQdUQSE6biU13tNpRXpM93DGyHNA1xc/DfRHKH5ZWD7MEOaPeCXTdoHnBMjqJXCS0qfKeixRg==",
+  "dgSpecHash": "rswZJBlOJyp86nFtdtWkVCSkzSE1WZXlDxcaTN+bryLcH7VNnNaeAsb0dsxd0nOiP6nNVy+jHWuAoyyLTV8jLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\manng\\Desktop\\RTAPt2\\Library.App\\Library.App.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,9 @@
     "C:\\Users\\manng\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.5\\sqlitepclraw.lib.e_sqlite3.2.1.5.nupkg.sha512",
     "C:\\Users\\manng\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.1.5\\sqlitepclraw.provider.dynamic_cdecl.2.1.5.nupkg.sha512",
     "C:\\Users\\manng\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.5\\sqlitepclraw.provider.e_sqlite3.2.1.5.nupkg.sha512",
-    "C:\\Users\\manng\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+    "C:\\Users\\manng\\.nuget\\packages\\sqlitepclraw.provider.sqlite3\\2.1.5\\sqlitepclraw.provider.sqlite3.2.1.5.nupkg.sha512",
+    "C:\\Users\\manng\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\manng\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512"
   ],
   "logs": []
 }
