@@ -16,8 +16,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -31,6 +29,6 @@
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>CFBundleIdentifier</key>
-	<string>com.RanaskiOSsample.gabriel (explicit)</string>
+	<string>com.RanaskiOSsample.gabriel</string>
 </dict>
 </plist>

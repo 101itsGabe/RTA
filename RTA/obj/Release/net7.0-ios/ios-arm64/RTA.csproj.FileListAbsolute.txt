@@ -277,3 +277,4 @@ C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-ios\ios-arm64\refint\RTA.dl
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-ios\ios-arm64\RTA.pdb
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-ios\ios-arm64\RTA.genruntimeconfig.cache
 C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-ios\ios-arm64\ref\RTA.dll
+C:\Users\manng\Desktop\RTAPt2\RTA\obj\Release\net7.0-ios\ios-arm64\resizetizer\r\Resources\dice.png
